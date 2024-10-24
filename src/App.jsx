@@ -6,7 +6,11 @@ import Weather from "./Components/Weather.jsx";
 function App() {
     return (
         <>
-            <div className="w-full flex justify-center items-center my-40">
+            <div
+                style={{
+                    minHeight: '100vh',
+                }}
+                className="w-full flex justify-center items-center my-auto ">
                 <ErrorBoundary>
                     <Weather />
                 </ErrorBoundary>
